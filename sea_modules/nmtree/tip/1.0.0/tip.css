@@ -1,0 +1,10 @@
+/*tip提示元件*/
+.nm-tip{background: rgba(0, 0, 0, 0.8); text-align: center; position: fixed; z-index: 99999; padding: 15px 30px; border-radius: 6px; top: 45%; left: 50%; color: #fff; font-size: 24px; font-family: '微软雅黒'; font-weight: normal; line-height: 28px;}
+.nm-tip i{float: left; display: inline-block; width: 24px; height: 24px;margin: 3px 10px 3px 0px;}
+/*
+.nm-tip.nm-info i{background: #00CCFF;}
+.nm-tip.nm-success i{background: #00FF33;}
+.nm-tip.nm-error i{background: #F00;}
+.nm-tip.nm-warning i{background: #FFC200;}
+*/
+.nm-tip p, .nm-tip.nm-info p{margin: 0px; display: inline-block; max-width: 530px; box-sizing: border-box; text-align: left;}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+.slider-container {
+    border: 1px solid #222;
+    width: 958px;
+    height: 298px;
+    overflow: hidden;
+}
+#main-inner {
+    position: relative;
+    height: 300px;
+    width: 960px;
+}
+#slider {
+    height: 300px;
+    width: 960px;
+}
+
+#slider img {
+    height: 298px;
+    width: 960px;
+    margin: 0;
+    position: relative;
+}

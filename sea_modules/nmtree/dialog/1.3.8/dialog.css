@@ -1,0 +1,219 @@
+.nm_dialog *,
+.nm_dialog *:after,
+.nm_dialog *:before  { -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important }
+
+.nm_dialog {
+    width: 350px;
+    z-index: 1001;
+    background: url(img/bg.png) repeat 0 0;
+    padding:5px;
+}
+
+.nm_dialog,
+.nm_dialog .nm_dialog_Title,
+.nm_dialog .nm_dialog_Body,
+.nm_dialog .nm_dialog_Buttons a {
+    font-family: Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.nm_dialog .nm_dialog_Title,
+.nm_dialog .nm_dialog_BodyOuter,
+.nm_dialog .nm_dialog_ButtonsOuter {
+    /*
+    border-color: #f60;
+    border-width: 7px;
+    */
+
+}
+
+.nm_dialog .nm_dialog_Title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+    background: #f5f5f5;
+    padding: 12px 15px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/*  set background color here and not on nm_dialog_Body, or you'll eventually run into problems with rounded corners
+    when using smaller widths for border! */
+.nm_dialog .nm_dialog_BodyOuter {
+    background: #fff;
+}
+
+.nm_dialog .nm_dialog_Body {
+    color: #44484A;
+    padding: 20px;
+    border-top-color: #f5f5f5;
+    border-bottom-color: #FFF;
+}
+
+.nm_dialog .nm_dialog_ButtonsOuter {
+    background: #f5f5f5;
+    padding: 10px 5px 10px 10px;
+}
+
+.nm_dialog .nm_dialog_Buttons:before,
+.nm_dialog .nm_dialog_Buttons:after     { content: "\0020"; display: block; height: 0; visibility: hidden; font-size: 0 }
+.nm_dialog .nm_dialog_Buttons:after     { clear: both }
+.nm_dialog .nm_dialog_Buttons           { *zoom: 1 } /* for IE only */
+
+.nm_dialog .nm_dialog_Buttons a {
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 0px 2px #222;
+    padding: 10px 15px;
+}
+
+.nm_dialog .nm_dialog_Buttons a:hover {
+    background: #224467;
+    color: #FFF
+}
+
+.nm_dialog a.nm_dialog_Close {
+    position: absolute;
+    right: 6px;
+    top: 0px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    color: #666
+}
+
+.nm_dialog a.nm_dialog_Close:hover {
+}
+
+.nm_dialog .nm_dialog_Title a.nm_dialog_Close {
+    color: #E7EDEF;
+}
+
+.nm_dialog .nm_dialog_Title a.nm_dialog_Close:hover {
+}
+
+.nm_dialogOverlay {
+    background: #000;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+/* = YOU SHOULD NOT CHANGE ANYTHING FROM THIS POINT ON
+---------------------------------------------------------------------------------------------------------------------*/
+.nm_dialog {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.nm_dialog .nm_dialog_Title {
+   
+
+}
+
+.nm_dialog .nm_dialog_BodyOuter {
+
+}
+
+.nm_dialog .nm_dialog_NoTitle {
+    border-top-style: solid;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nm_dialog .nm_dialog_NoButtons {
+   
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nm_dialog .nm_dialog_Body {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-style: groove;
+    overflow: auto;
+}
+
+.nm_dialog .nm_dialog_NoTitle .nm_dialog_Body {
+    border-top: none;
+}
+
+.nm_dialog .nm_dialog_NoButtons .nm_dialog_Body {
+    border-bottom: none;
+}
+
+.nm_dialog .nm_dialog_Icon {
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    padding-left: 88px;
+    min-height: 48px;
+    _height: 85px;
+}
+
+.nm_dialog .nm_dialog_Confirmation  { background-image: url('confirmation.png') }
+.nm_dialog .nm_dialog_Error         { background-image: url('error.png') }
+.nm_dialog .nm_dialog_Information   { background-image: url('information.png') }
+.nm_dialog .nm_dialog_Question      { background-image: url('question.png') }
+.nm_dialog .nm_dialog_Warning       { background-image: url('warning.png') }
+
+.nm_dialog .nm_dialog_ButtonsOuter {
+
+}
+
+.nm_dialog .nm_dialog_Buttons a {
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 60px;
+    float: right;
+    _width: 60px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    /* taken from Twitter Bootstrap */
+    background-color: #006DCC;
+    *background-color: #0044CC;
+    background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088CC), to(#0044CC));
+    background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+    background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    background-repeat: repeat-x;
+    border-color: #0044CC #0044CC #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0044CC', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.nm_dialog .nm_dialog_Buttons_Centered .nm_dialog_Buttons {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nm_dialog .nm_dialog_Buttons_Centered a {
+    zoom: 1;
+    *display: inline;
+}
+
+.nm_dialog .nm_dialog_Preloader {
+    height: 32px;
+    background: url('preloader.gif') no-repeat center center;
+}

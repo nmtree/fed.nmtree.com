@@ -1,0 +1,16 @@
+.nmtree-icon {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons.png);
+}
+.nmtree-share-icon{width: 16px;height: 16px;}
+.nmtree-weibo {background-position: -0px -48px;}
+.nmtree-weibo:hover{background-position: -0px -32px;}
+.nmtree-tqq {background-position: -32px 0px;}
+.nmtree-tqq:hover {background-position: -16px 0px;}
+.nmtree-douban {background-position: -48px -16px;}
+.nmtree-douban:hover {background-position: -32px -16px;}
+.nmtree-up{width: 15px;height: 9px;background-position: 0px -67px;}
+.nmtree-weixin{background-position: -16px -66px;}
+

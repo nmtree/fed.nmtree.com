@@ -1,5 +1,4 @@
 define(function(require, exports) {
-	seajs.log('app begin\n');
 	var $ = jQuery 	= require('jquery');
 	var _cookie 	= require('cookie');
 	var _store   	= require('store');

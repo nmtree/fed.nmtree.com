@@ -1,14 +1,3 @@
-/*
- * # Semantic - Breadcrumb
- * http://github.com/jlukic/semantic-ui/
- *
- *
- * Copyright 2013 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-
 /*******************************
            Breadcrumb
 *******************************/
@@ -2691,8 +2680,8 @@ body > .ui.grid {
   color: #D95C5C !important;
 }
 
-.ui.menu .blue.active.item,
-.ui.blue.menu .active.item {
+.ui.menu .nmtree.active.item,
+.ui.nmtree.menu .active.item {
   border-color: #2c99ff !important;
   color: #2c99ff !important;
 }
@@ -2897,11 +2886,11 @@ body > .ui.grid {
   background-color: #F16883;
 }
 
-.ui.inverted.blue.menu {
+.ui.inverted.nmtree.menu {
   background-color: #2c99ff;
 }
 
-.ui.inverted.blue.pointing.menu .active.item:after {
+.ui.inverted.nmtree.pointing.menu .active.item:after {
   background-color: #2c99ff;
 }
 
@@ -3455,7 +3444,7 @@ body > .ui.grid {
      Types
 ---------------*/
 
-.ui.blue.message,
+.ui.nmtree.message,
 .ui.info.message {
   background-color: #E6F4F9;
   color: #4D8796;
@@ -5190,7 +5179,7 @@ i.inverted.basic.icon {
        Colors
 --------------------*/
 
-i.blue.basic.icon {
+i.nmtree.basic.icon {
   color: #2c99ff !important;
 }
 
@@ -5223,7 +5212,7 @@ i.inverted.black.basic.icon {
   color: #FFFFFF !important;
 }
 
-i.inverted.blue.basic.icon {
+i.inverted.nmtree.basic.icon {
   background-color: #2c99ff !important;
   color: #FFFFFF !important;
 }
@@ -5307,7 +5296,7 @@ i.massive.basic.icon {
   min-height: 1em;
   outline: none;
   border: none;
-  background-color: #FAFAFA;
+  background-color: #eee;
   color: #808080;
   margin: 0em;
   padding: 0.8em 1.5em;
@@ -5321,7 +5310,7 @@ i.massive.basic.icon {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.05)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  border-radius: 0.25em;
+  border-radius: 0.35em;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
   -webkit-user-select: none;
@@ -6508,23 +6497,23 @@ i.massive.basic.icon {
 
 /*--- Blue ---*/
 
-.ui.blue.buttons .button,
-.ui.blue.button {
-  background-color: #2c99ff;
+.ui.nmtree.buttons .button,
+.ui.nmtree.button {
+  background-color: #327fc7;
   color: #FFFFFF;
 }
 
-.ui.blue.buttons .button:hover,
-.ui.blue.button:hover,
-.ui.blue.buttons .active.button,
-.ui.blue.button.active {
-  background-color: #1AB8F3;
+.ui.nmtree.buttons .button:hover,
+.ui.nmtree.button:hover,
+.ui.nmtree.buttons .active.button,
+.ui.nmtree.button.active {
+  background-color:#1394D6;
   color: #FFFFFF;
 }
 
-.ui.blue.buttons .button:active,
-.ui.blue.button:active {
-  background-color: #0AA5DF;
+.ui.nmtree.buttons .button:active,
+.ui.nmtree.button:active {
+  background-color:#1394D6;
   color: #FFFFFF;
 }
 
@@ -6648,13 +6637,13 @@ i.massive.basic.icon {
 
 .ui.buttons .button:first-child {
   margin-right: -1px;
-  border-top-left-radius: 0.25em;
-  border-bottom-left-radius: 0.25em;
+  border-top-left-radius: 0.35em;
+  border-bottom-left-radius: 0.35em;
 }
 
 .ui.buttons .button:last-child {
-  border-top-right-radius: 0.25em;
-  border-bottom-right-radius: 0.25em;
+  border-top-right-radius: 0.35em;
+  border-bottom-right-radius: 0.35em;
 }
 
 /* Vertical  Style */
@@ -7047,7 +7036,7 @@ h5.ui.header {
        Colors
 --------------------*/
 
-.ui.blue.header {
+.ui.nmtree.header {
   color: #2c99ff !important;
 }
 
@@ -7073,7 +7062,7 @@ h5.ui.header {
   color: #00B5AD !important;
 }
 
-.ui.blue.dividing.header {
+.ui.nmtree.dividing.header {
   border-bottom: 3px solid #2c99ff;
 }
 
@@ -7121,7 +7110,7 @@ h5.ui.header {
   color: #FFFFFF !important;
 }
 
-.ui.inverted.blue.header {
+.ui.inverted.nmtree.header {
   background-color: #2c99ff !important;
   color: #FFFFFF !important;
 }
@@ -8986,7 +8975,7 @@ i.inverted.icon {
        Colors
 --------------------*/
 
-i.blue.icon {
+i.nmtree.icon {
   color: #2c99ff !important;
 }
 
@@ -9019,7 +9008,7 @@ i.inverted.black.icon {
   color: #FFFFFF !important;
 }
 
-i.inverted.blue.icon {
+i.inverted.nmtree.icon {
   background-color: #2c99ff !important;
   color: #FFFFFF !important;
 }
@@ -10101,47 +10090,47 @@ a.ui.red.label:hover:before {
   border-color: #DE3859 !important;
 }
 
-/*--- Blue ---*/
+/*--- nmtree ---*/
 
-.ui.blue.labels .label,
-.ui.blue.label {
+.ui.nmtree.labels .label,
+.ui.nmtree.label {
   background-color: #2c99ff !important;
   border-color: #2c99ff !important;
   color: #FFFFFF !important;
 }
 
-.ui.labels .blue.label:before,
-.ui.blue.labels .label:before,
-.ui.blue.label:before {
+.ui.labels .nmtree.label:before,
+.ui.nmtree.labels .label:before,
+.ui.nmtree.label:before {
   background-color: #2c99ff !important;
 }
 
 /* Hover */
 
-a.ui.blue.labels .label:hover,
-.ui.blue.labels a.label:hover,
-a.ui.blue.label:hover {
+a.ui.nmtree.labels .label:hover,
+.ui.nmtree.labels a.label:hover,
+a.ui.nmtree.label:hover {
   background-color: #1AB8F3 !important;
   border-color: #1AB8F3 !important;
   color: #FFFFFF !important;
 }
 
-.ui.labels a.blue.label:hover:before,
-.ui.blue.labels a.label:hover:before,
-a.ui.blue.label:hover:before {
+.ui.labels a.nmtree.label:hover:before,
+.ui.nmtree.labels a.label:hover:before,
+a.ui.nmtree.label:hover:before {
   background-color: #1AB8F3 !important;
 }
 
 /* Corner */
 
-.ui.blue.corner.label,
-.ui.blue.corner.label:hover {
+.ui.nmtree.corner.label,
+.ui.nmtree.corner.label:hover {
   background-color: transparent !important;
 }
 
 /* Ribbon */
 
-.ui.blue.ribbon.label {
+.ui.nmtree.ribbon.label {
   border-color: #1AB8F3 !important;
 }
 
@@ -10794,7 +10783,7 @@ a.ui.teal.label:hover:before {
      Colors
 ---------------*/
 
-.ui.blue.progress .bar {
+.ui.nmtree.progress .bar {
   background-color: #2c99ff;
 }
 
@@ -11442,7 +11431,7 @@ a.ui.teal.label:hover:before {
        Colors
 --------------------*/
 
-.ui.blue.segment {
+.ui.nmtree.segment {
   border-top: 0.2em solid #2c99ff;
 }
 
@@ -11475,7 +11464,7 @@ a.ui.teal.label:hover:before {
   color: #FFFFFF !important;
 }
 
-.ui.inverted.blue.segment {
+.ui.inverted.nmtree.segment {
   background-color: #2c99ff !important;
   color: #FFFFFF !important;
 }

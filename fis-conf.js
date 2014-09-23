@@ -41,7 +41,8 @@ fis.config.merge({
             '/sea_modules/seajs/seajs-preload/seajs-preload.js',
             '/sea_modules/seajs/seajs-log/seajs-log.js',
             '/sea_modules/config.js',
-            '/sea_modules/init.js'
+            '/sea_modules/init.js',
+            '/dev_statics/scripts/base.js'
         ]
     },
     roadmap : {

@@ -4,11 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-type" content="application/x-www-form-urlencoded; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link rel="shortcut icon bookmark" href="dev_statics/icons/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="dev_statics/icons/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="dev_statics/icons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="dev_statics/icons/apple-touch-icon-114x114.png" />
 <title>柠檬树</title>
 
 <link href="dev_statics/styles/ui.css" rel="stylesheet">
@@ -21,12 +17,14 @@
 <script src="sea_modules/seajs/seajs-log/seajs-log.js"></script>
 <script src="sea_modules/config.js"></script>
 <script src="sea_modules/init.js"></script>
+<script src="dev_statics/scripts/base.js"></script>
 
 <script>
-var NM = window.NM = {
-	themes : 'black',
-	btnSize   : 'mini'
-}
+;(function(){
+	var Nmtree = window.Nmtree = {
+		
+	}
+})();
 </script>
 
 <!--[if lt IE 9]>
@@ -36,24 +34,35 @@ var NM = window.NM = {
 
 </head>
 <body class="ui black" style="padding:50px">
-	<div class="ui icon buttons">
-		<div class="ui button blue">
-	        <i class="play icon"></i>播放
-	    </div>
+	<div class="ui buttons">
+		<a class="ui icon nmtree labeled button"><i class="awesome download cloud icon"></i>blue</a>
+		<button class="ui button purple">purple</button>
+		<button class="ui button teal">teal</button>
+		<button class="ui button positive">positive</button>
+		<button class="ui button negative">negative</button>
+		<button class="ui button red">red</button>
+		<button class="ui button green">green</button>
+		<button class="ui button orange">orange</button>
+		<button class="ui button black">black</button>
 	</div>
 
-	<center style="padding-top:100px"> ------ <span class="TipB" title="hello,world!">123</span></center>
+	<div class="ui buttons" style="padding-top:50px">
+		<button class="ui icon button labeled vk"><i class="coffee icon"></i>vk</button>
+		<button class="ui button facebook">facebook</button>
+		<button class="ui button twitter">twitter</button>
+		<button class="ui button google plus">google</button>
+		<button class="ui button linkedin">linkedin</button>
+		<button class="ui button youtube">youtube</button>
+		<button class="ui button instagram">instagram</button>
+		<button class="ui button pinterest">pinterest</button>
+		<button class="ui button">default</button>
+	</div>
 
-	<a href="javascript:void(0)" class="dialog">asd</a>
-	<div id="top"></div>
-
-
-	<script id="recommend-template" type="text/x-handlebars-template">
-		ads
-	</script>
 
 	<script>
-		seajs.use('test/main')
+		seajs.use('home/main',function(github){
+			github.getUser().show()
+		})
 	</script>
 
 </body>

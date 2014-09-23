@@ -182,35 +182,7 @@ define('common/base',function(require, exports, module) {
             });
             return uuid;
         };
-        /*
-        * Url组装
-        */
-        _base.Url = function(mod,action,param) {
-            var _url = '';
-            param = param.split('=');
-            switch(CONFIG.URL_MODEL){
-                case '0' :
-                    _url = '/index.php?m='+mod+'&a='+action+'&'+param[0]+"="+param[1];
-                break;
-                case '1' :
-                    _url = '/index.php/'+mod+CONFIG.URL_PATHINFO_DEPR+action+CONFIG.URL_PATHINFO_DEPR+param[0]+CONFIG.URL_PATHINFO_DEPR+param[1]+CONFIG.URL_HTML_SUFFIX
-                break;
-                case '2' :
-                    _url = '/'+mod+CONFIG.URL_PATHINFO_DEPR+action+CONFIG.URL_PATHINFO_DEPR+param[0]+CONFIG.URL_PATHINFO_DEPR+param[1]+CONFIG.URL_HTML_SUFFIX
-                break;
-            }
-            return _url;
-        };
-        _base.pjax = function() {
-            pajax({
-                selector: 'a',
-                container: '#container', //内容替换的容器
-                titleSuffix: 'test',
-                callback: function(){
-                    console.log(Base.generateGUID());
-                }
-            });
-        };
+        
         return _base;
     })();
     //暴露外部接口
